@@ -1,0 +1,9 @@
+1] Create a linked list with 3 nodes
+2] Write a function "PrintList" to print the linked list
+3] write a function "Push" to push a value in the linked list
+4] write a function "InsertAfter" to insert elem after specific node
+5] Write a function "InsertAfterPos" to insert elem after given position
+6] Write a function "Append" to append elem in the linked list
+7] Write a function "DeleteNode" to delete the first occurence of elem in the linked list
+8] Write a function "DeletePos" to delete elem at given position in the linked list
+ 

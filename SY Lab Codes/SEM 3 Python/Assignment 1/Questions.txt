@@ -1,0 +1,19 @@
+1] WAPP that prints the current version of python you are using.
+
+2] WAPP that asks user for name and age. Print out message that tells the year in which they will turn 100 years old.
+
+3] WAPP that takes radius of circle and prints area of circle.
+
+4] WAPP that asks user for a number. Print out message whether the number is even or odd.
+
+5] WAPP that asks user for a string and print out whether the string is palindrome or not.
+
+6] WAPP to get a single string from two given strings seperated by a space and swap the first two characters of each string.
+
+7] WAPP to add 'ing'  at end of given string whose length should be atleast 3. If the given string already ends with 'ing', then add 'ly'. If the length of string is less than 3, leave it unchanged.
+
+8] WAPP to change a given string to a new string, where the first and last characters have been exchanged.
+
+9] WAPP to get a string from a given string where all occurences of its first character have been changed to '$', except the first character itself. eg : restart  --> resta$t
+
+10] WAPP that takes input from the user and displays the input in upper and lower cases.

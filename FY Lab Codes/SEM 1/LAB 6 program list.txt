@@ -1,0 +1,9 @@
+1] Area of Circle using pointers
+2] largest of 3 nos using pointers
+3] Perfect number using pointers
+4] Sort N names in order
+5] Finding largest element using dynamic mem allocation
+6] Student structure (store and display)
+7] Student structure (store and display) using pointers
+8] Sort student structure as per merit
+9] Sort student structure as per name

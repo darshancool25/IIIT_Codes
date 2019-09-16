@@ -1,0 +1,5 @@
+WAP to find area of circle, rectangle, triangle using function overloading.
+
+WAP to add two private members using friend function.
+
+WAP to count the number of objects created using all types of constructors. Display When a constructor is called or destructor is called
