@@ -5,6 +5,5 @@ def calcletter(mystr) :
         else : lcnt +=1
     print("The no. Of Upper Case letters are : ",ucnt)
     print("The no. Of Lower Case letters are : ",lcnt)
-
 mystr = input("Enter a string : ")
 calcletter(mystr)

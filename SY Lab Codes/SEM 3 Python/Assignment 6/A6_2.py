@@ -1,6 +1,5 @@
 inp = input()
-inplist = inp.split()
-new = []
+inplist,new = inp.split(),[]
 for item in inplist:
     if(item not in new):
         new.append(item)
