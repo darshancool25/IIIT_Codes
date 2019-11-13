@@ -13,7 +13,7 @@ public:
 class B:public A
 {
 public:
-	void show()
+	void Display()
 	{
 		cout << "Derived Display!";
 	}

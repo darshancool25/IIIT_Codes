@@ -1,6 +1,3 @@
-//name MIS, marks obtained in 3 subjects, contact , email
-//average of marks
-
 #include<iostream>
 using namespace std;
 

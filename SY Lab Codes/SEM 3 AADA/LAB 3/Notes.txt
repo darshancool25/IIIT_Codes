@@ -1,6 +1,0 @@
-Write recurrence relation for bubble sort. Find its complexity.
-
-Write about insertion sort.
-
-Write and find complexity of selection sort.
-

@@ -1,3 +1,0 @@
-1] Implement insertion sort, print and store no. of times outer loop and inner loop are run for the best case and worst case.
-
-2] Implement merge sort algo and print the number of calls made to merge sort[Along Side print the size of subproblem and array of the problem] for best case and worst case.
