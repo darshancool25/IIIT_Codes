@@ -51,5 +51,9 @@ int main()
 			cout << p[3][i][j] << ' ';
 		cout << '\n';
 	}
+	for(i=0;i<4;i++)
+	{
+		free(p[i]);
+	}
 	return 0;
 }
