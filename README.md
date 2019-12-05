@@ -10,5 +10,5 @@ The programing languages used are : C++ , C , Python
 ###  Sem 3 
   * [Python Programming](https://github.com/darshancool25/IIIT_Codes/tree/master/SY%20Lab%20Codes/SEM%203%20Python) :snake:
   * [Object Oriented Programming](https://github.com/darshancool25/IIIT_Codes/tree/master/SY%20Lab%20Codes/SEM%203%20OOPM)
-  * [Analysis and Design of Algorithms](https://github.com/darshancool25/IIIT_Codes/tree/master/SY%20Lab%20Codes/SEM%203%20AADA) :blue_heart:
+  * [Analysis and Design of Algorithms](https://github.com/darshancool25/IIIT_Codes/tree/master/SY%20Lab%20Codes/SEM%203%20AADA) :heart:
   * [Operating Systems](https://github.com/darshancool25/IIIT_Codes/tree/master/SY%20Lab%20Codes/SEM%203%20OS) :ghost:
