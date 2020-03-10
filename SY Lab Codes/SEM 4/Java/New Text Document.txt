@@ -1,0 +1,4 @@
+1] WAJP to find roots of quadratic equation.
+2] WAJP to find volume and surface area of a cuboid.
+
+ek mein statuc aur ek mein static aur instance

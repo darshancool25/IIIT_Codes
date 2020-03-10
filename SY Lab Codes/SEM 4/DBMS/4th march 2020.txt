@@ -1,0 +1,60 @@
+﻿database name - database_models
+
+CREATE TABLE product(maker varchar(255), model varchar(255), type varchar(255), PRIMARY KEY (model));
+
+CREATE TABLE PC(model varchar(255),speed int,ram int, hd int, rd int, price int, PRIMARY KEY (model));
+
+CREATE TABLE Laptop(model varchar(255), speed int, ram int, hd int, screen int, price int, PRIMARY KEY (model));
+
+CREATE TABLE Printer(model varchar(255), color varchar(255), type varchar(255), price int, PRIMARY KEY (model));
+
+insert into product values("HP", "OmenL1", "Laptop");
+insert into product values("HP", "PavillionL1", "Laptop");
+insert into product values("HP", "PavillionL2", "Laptop");
+insert into product values("HP", "PavillionPC2", "PC");
+insert into product values("HP", "PavillionPC3", "PC");
+insert into product values("HP", "PavillionPC1", "PC");
+insert into product values("HP", "OmenPC1", "PC");
+insert into product values("Dell", "XPS", "Laptop");
+insert into product values("HP", "HP-1080", "Printer");
+insert into product values("HP", "HP-1090", "Printer");
+insert into product values("HP", "HP-1070", "Printer");
+
+insert into pc values("PavillionPC1", 100,4,500,500,70000);
+insert into pc values("PavillionPC2", 101,8,500,500,80000);
+insert into pc values("OmenPC1", 100,4,500,500,74000);
+insert into pc values("PavillionPC3", 100,4,500,500,78000);
+
+insert into laptop values("OmenL1", 104,4,500,16,80000);
+insert into laptop values("PavillionL1", 110,4,512,14,82000);
+insert into laptop values("PavillionL2", 103,4,500,16,50000);
+insert into laptop values("XPS", 100,4,500,14,90000);
+
+insert into printer values("HP-1070","yes","laser",10000);
+insert into printer values("HP-1080","no","inkjet",11000);
+insert into printer values("HP-1090","yes","buuble",12000);
+
+a)
+answer - 
+select avg(price) from PC where model in (select model from Product where maker = "A");
+
+b)
+answer - 
+select maker, max(price) from Product, PC where product.model = pc.model group by maker;
+
+c)
+answer - 
+SELECT maker FROM Product WHERE type=’pc’ GROUP BY maker HAVING COUNT(model) >= 3;
+
+d)
+answer - 
+SELECT maker FROM Product WHERE type=’pc’ GROUP BY maker HAVING COUNT(model) >= 3;
+
+e)
+answer - 
+SELECT AVG(P.hd) AS Avg_HD_Size FROM Product R, PC P WHERE R.model = P.model AND R.maker IN ( SELECT maker FROM Product WHERE type = printer’);
+
+
+f) Find the model no of the item with the highest price : 
+Answer - 
+with maxp as (select model, price from pc union select model, price from laptop union select model, price from printer) select model from maxp where price = (select max(price) from maxp);

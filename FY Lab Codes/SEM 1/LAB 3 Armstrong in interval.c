@@ -3,13 +3,12 @@
 
 int main()
 {
-    int low,high,i,dig,sum,num,temp,j;
+    long long int low,high,i,dig,sum,num,temp,j;
 
     printf("Enter lower and upper limit : ");
     scanf("%d %d",&low,&high);
 
     printf("\nThe Armstrong nos in given range are : ");
-
     for(i=low;i<=high;i++)
     {
         sum=0;
@@ -30,7 +29,9 @@ int main()
 
 
        if(sum==i)
+       {
             printf("%d ",i);
+       }
 
     }
 }

@@ -1,0 +1,70 @@
+CREATE TABLE department	(dept_name varchar(20),  building varchar(15),  budget numeric(12,2) check (budget > 0), primary key (dept_name));
+
+CREATE TABLE time_slot(time_slot_id varchar(4),day varchar(1),start_hr numeric(2) check (start_hr >= 0 and start_hr < 24), start_min numeric(2) check (start_min >= 0 and start_min < 60), end_hr numeric(2) check (end_hr >= 0 and end_hr < 24), end_min numeric(2) check (end_min >= 0 and end_min < 60), primary key (time_slot_id, day, start_hr, start_min));
+
+CREATE TABLE course (course_id varchar(8), title varchar(50),dept_name varchar(20),credits numeric(2,0) check (credits > 0),primary key (course_id),foreign key (dept_name) references department(dept_name) on delete set null);
+
+CREATE TABLE student(ID varchar(5),name varchar(20) not null,dept_name varchar(20), tot_cred numeric(3,0) check (tot_cred >= 0),primary key (ID),foreign key (dept_name) references department(dept_name) on delete set null);
+
+CREATE TABLE instructor(ID varchar(5), name varchar(20) not null,dept_name varchar(20), salary numeric(8,2) check (salary > 29000),primary key (ID),foreign key (dept_name) references department(dept_name) on delete set null);
+
+CREATE TABLE advisor (s_ID varchar(5), i_ID varchar(5), primary key (s_ID), foreign key (i_ID) references instructor (ID) on delete set null, foreign key (s_ID) references student (ID)on delete cascade);
+
+
+Database name - movies	
+
+insert into actor values(1,"darshan","male");
+insert into actor values(2,"yashodhan","male");
+insert into actor values(3,"jay","male");
+insert into actor values(4,"sparsh","male");
+insert into actor values(5,"aman","male");
+insert into actor values(6,"anagha","female");
+insert into actor values(7,"navjit","female");
+
+
+insert into movie_cast values(1,1,"hero");
+insert into movie_cast values(2,4,"hero");
+insert into movie_cast values(4,5,"hero");
+insert into movie_cast values(5,3,"hero");
+insert into movie_cast values(7,1,"heroine");
+insert into movie_cast values(6,2,"heroine");
+insert into movie_cast values(3,1,"side");
+insert into movie_cast values(3,3,"side");
+
+insert into rating values(1,5);
+insert into rating values(2,4);
+insert into rating values(3,6);
+insert into rating values(4,7);
+insert into rating values(5,8);
+insert into rating values(6,10);
+
+
+insert into director values(1,"Hitchcock",12345);
+insert into director values(2,"Nolan",12385);
+insert into director values(3,"Spielberg",189345);
+insert into director values(4,"Johar",12369);
+insert into director values(5,"Bhansali",12346);
+
+insert into movies values(1,"Gully Boy", 2019,"hindi",1);
+insert into movies values(2,"Mardaani", 2019,"hindi",1);
+insert into movies values(3,"Padmavaat", 2018,"hindi",2);
+insert into movies values(4,"Good news", 2020,"hindi",4);
+insert into movies values(5,"Phir Hera Pheri", 2007,"hindi",3);
+insert into movies values(6,"Gangs of wasseypur", 2010,"hindi",5);
+
+query 1 : 
+select Mov_Title from movies natural join director where Dir_Name="Hitchcock";
+
+query 2:
+
+SELECT mov_title FROM movies WHERE mov_id IN (SELECT mov_id FROM movie_cast WHERE act_id IN (SELECT act_id FROM actor WHERE act_id IN (SELECT act_id FROM movie_cast GROUP BY act_id HAVING COUNT(act_id)>1)));
+
+
+query 3 : 
+
+select Act_Name from actor where Act_id in (select Act_id from (movies natural join movie_cast) a where a.Mov_Year<2000 or a.Mov_Year>2015);
+
+query 4 : 
+
+
+
