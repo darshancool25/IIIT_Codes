@@ -1,3 +1,4 @@
+//Enter Command "java run" to run the program after compiling
 import java.lang.Math;
 class run {
 	public static void main(String[] args) {

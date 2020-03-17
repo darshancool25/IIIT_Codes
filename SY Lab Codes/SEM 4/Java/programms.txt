@@ -1,0 +1,14 @@
+1. Write a simple programm in java to perform calculation feet to inches and vice-versa.  
+2. WAP Area of circle static block.
+3. WAP to find a root of Quadratic Equatiion.
+4. Write Java programm to find volume and surface area of a cuboids.
+5. A group of person consisting of father and sons. The average age of man and his son is 64 years. The ratio of
+   their ages 4 years ago was 11:3. What will be the ratio of each man and son with age.Create 2 array list of 
+   objects, one for father and other for son, with parameter name, age, ratio.(Lab 2)
+6. Write a programm to create simple shopping cart list using array list of object.
+   user can select multiple product item fromthe list .Display the details of selected products and a Total bill.
+(class product product name ...................
+for each........user option......) (Lab 3)
+
+7. Create A simple Java programm for bank Transaction using single instance methodlogy and mutator methods.
+   User must perform deposit withral and balance funcnality. display account detail with total balance.
