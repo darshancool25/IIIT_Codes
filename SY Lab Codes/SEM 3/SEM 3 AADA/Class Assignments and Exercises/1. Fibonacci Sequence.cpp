@@ -80,9 +80,11 @@ int main()
     ll i, n;
     cout << "Enter value on n : ";
     cin >> n;
-    cout << "Matrix Exponentiation [nth Fibo term] : " << FiboM(n) << '\n';
-    cout << "Recursive Function [nth Fibo term] : " << RecFibo(n) << '\n';
-    cout << "DP array [nth Fibo Term] : " << FiboDP(n) << '\n';
-    // foe(i,1,n)
-    // cout << fibo(i) << '\n';
+    // cout << "Matrix Exponentiation [nth Fibo term] : " << FiboM(n) << '\n';
+    // cout << "Recursive Function [nth Fibo term] : " << RecFibo(n) << '\n';
+    // cout << "DP array [nth Fibo Term] : " << FiboDP(n) << '\n';
+    foe(i,1,n)
+    cout << FiboM(i)%10;  
+
+
 }
