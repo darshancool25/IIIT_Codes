@@ -5,15 +5,15 @@ import java.io.*;
 
 
 class run {
-	public static void main(String[] args) {
-		int [] arr = new int[args.length];
-		for (int i = 0; i < args.length; i++) {
-			arr[i] = Integer.parseInt(args[i]);
-		}
-		int minn = arr[0];
-		for (int i = 0; i < args.length; i++) {
-			if (arr[i] < minn)minn = arr[i];
-		}
-		System.out.println("The Minimum of all numbers entered is : " + minn);
-	}
+    public static void main(String[] args) {
+        int [] arr = new int[args.length];
+        for (int i = 0; i < args.length; i++) {
+            arr[i] = Integer.parseInt(args[i]);
+        }
+        int minn = arr[0];
+        for (int i = 0; i < args.length; i++) {
+            if (arr[i] < minn)minn = arr[i];
+        }
+        System.out.println("The Minimum of all numbers entered is : " + minn);
+    }
 }
